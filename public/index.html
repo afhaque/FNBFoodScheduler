@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html ng-app="FNBScheduler">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+    <title>FNB Houston Donation Scheduler</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="bootstrap.css"/>
+    <link rel="stylesheet" href="main.css"/>
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.8.0/holder.js"></script>
+    <script src="../bower_components/bootstrap/dist/css/bootstrap.min.css"></script>
+    <script src="../bower_components/jquery/jquery.js"></script>
+    <script src="core.js"></script>
+
+</head>
+
+<body ng-controller="mainController" ng-init="initialize()">
+<div class="container">
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">FNB - Houston</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../navbar-static-top/">Sign-Up</a></li>
+                    <li><a href="../navbar-fixed-top/">Current Schedule</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+
+
+    <div class="jumbotron text-center">
+        <h1>FNB - Donation Scheduler</span></h1>
+    </div>
+
+    <hr/>
+
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h2>Sign-Up</h2>
+        </div>
+        <div class="col-md-3 text-center">
+            <h3>Monday</h3>
+            <img class="thumbnail center-block" src="holder.js/200x200">
+        </div>
+        <div class="col-md-3 text-center">
+            <h3>Wednesday</h3>
+            <img class="thumbnail center-block" src="holder.js/200x200">
+        </div>
+        <div class="col-md-3 text-center">
+            <h3>Friday</h3>
+            <img class="thumbnail center-block" src="holder.js/200x200">
+        </div>
+        <div class="col-md-3 text-center">
+            <h3>Sunday</h3>
+            <img class="thumbnail center-block" src="holder.js/200x200">
+        </div>
+        <p class="text-center">Click one of the four buttons below to sign-up for that day. The number on top represents the number of volunteers who have already pledged to donate  that day.</p>
+
+    </div>
+
+    <hr/>
+
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h2>Current Schedule</h2>
+        </div>
+        <div class="col-md-10-offset-2 text-center">
+            <h3>Monday</h3>
+            <table class="table table-bordered table-striped">
+                <tr>
+                    <th class="tg-031e text-center">Name</th>
+                    <th class="tg-031e text-center">Organization</th>
+                    <th class="tg-031e text-center">Expected Donation</th>
+                </tr>
+                <tr>
+                    <td class="tg-031e">Ahmed</td>
+                    <td class="tg-031e">RCoHH</td>
+                    <td class="tg-031e">200 PB&amp;J Sandwiches</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">Marta</td>
+                    <td class="tg-031e">N/A</td>
+                    <td class="tg-031e">Spaghetti</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">Jorge</td>
+                    <td class="tg-031e">Lutheran Church</td>
+                    <td class="tg-031e">Tray of Enchiladas</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">Jacob</td>
+                    <td class="tg-031e">FNB</td>
+                    <td class="tg-031e">20 loaves of bread</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">Diana</td>
+                    <td class="tg-031e">FNB</td>
+                    <td class="tg-031e">Tray of Salad</td>
+                </tr>
+            </table>
+        </div>
+
+        <hr/>
+
+        <div class="col-md-10-offset-2 text-center">
+            <h3>Wednesday</h3>
+            <table class="table table-bordered table-striped">
+                <tr>
+                    <th class="tg-031e text-center">Name</th>
+                    <th class="tg-031e text-center">Organization</th>
+                    <th class="tg-031e text-center">Expected Donation</th>
+                </tr>
+                <tr>
+                    <td class="tg-031e">Ahmed</td>
+                    <td class="tg-031e">RCoHH</td>
+                    <td class="tg-031e">200 PB&amp;J Sandwiches</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">Marta</td>
+                    <td class="tg-031e">N/A</td>
+                    <td class="tg-031e">Spaghetti</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">Jorge</td>
+                    <td class="tg-031e">Lutheran Church</td>
+                    <td class="tg-031e">Tray of Enchiladas</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">Jacob</td>
+                    <td class="tg-031e">FNB</td>
+                    <td class="tg-031e">20 loaves of bread</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">Diana</td>
+                    <td class="tg-031e">FNB</td>
+                    <td class="tg-031e">Tray of Salad</td>
+                </tr>
+            </table>
+        </div>
+
+        <hr/>
+
+        <div class="col-md-10-offset-2 text-center">
+            <h3>Friday</h3>
+            <table class="table table-bordered table-striped">
+                <tr>
+                    <th class="tg-031e text-center">Name</th>
+                    <th class="tg-031e text-center">Organization</th>
+                    <th class="tg-031e text-center">Expected Donation</th>
+                </tr>
+                <tr>
+                    <td class="tg-031e">Ahmed</td>
+                    <td class="tg-031e">RCoHH</td>
+                    <td class="tg-031e">200 PB&amp;J Sandwiches</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">Marta</td>
+                    <td class="tg-031e">N/A</td>
+                    <td class="tg-031e">Spaghetti</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">Jorge</td>
+                    <td class="tg-031e">Lutheran Church</td>
+                    <td class="tg-031e">Tray of Enchiladas</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">Jacob</td>
+                    <td class="tg-031e">FNB</td>
+                    <td class="tg-031e">20 loaves of bread</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">Diana</td>
+                    <td class="tg-031e">FNB</td>
+                    <td class="tg-031e">Tray of Salad</td>
+                </tr>
+            </table>
+        </div>
+
+        <hr/>
+
+        <div class="col-md-10-offset-2 text-center">
+            <h3>Sunday</h3>
+            <table class="table table-bordered table-striped">
+                <tr>
+                    <th class="tg-031e text-center">Name</th>
+                    <th class="tg-031e text-center">Organization</th>
+                    <th class="tg-031e text-center">Expected Donation</th>
+                </tr>
+                <tr>
+                    <td class="tg-031e">Ahmed</td>
+                    <td class="tg-031e">RCoHH</td>
+                    <td class="tg-031e">200 PB&amp;J Sandwiches</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">Marta</td>
+                    <td class="tg-031e">N/A</td>
+                    <td class="tg-031e">Spaghetti</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">Jorge</td>
+                    <td class="tg-031e">Lutheran Church</td>
+                    <td class="tg-031e">Tray of Enchiladas</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">Jacob</td>
+                    <td class="tg-031e">FNB</td>
+                    <td class="tg-031e">20 loaves of bread</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">Diana</td>
+                    <td class="tg-031e">FNB</td>
+                    <td class="tg-031e">Tray of Salad</td>
+                </tr>
+            </table>        </div>
+    </div>
+
+    <hr/>
+    <div class="row">
+        <div class="col-md-10-offset-2 text-center">
+            <p>Made with love | Github</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

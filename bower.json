@@ -1,0 +1,22 @@
+{
+  "name": "FNBFoodScheduler",
+  "version": "0.0.0",
+  "authors": [
+    "Ahmed Haque <afhaque@rice.edu>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "angular": "1.0.8",
+    "jquery": "2.0.3",
+    "holderjs": "~2.8.0",
+    "jquery-backstretch": "~2.0.4"
+  }
+}
