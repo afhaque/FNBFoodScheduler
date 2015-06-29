@@ -6,15 +6,15 @@
     <title>FNB Houston Donation Scheduler</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
-    <link rel="stylesheet" href="bootstrap.css"/>
-    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="https://bootswatch.com/united/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
 
     <!-- JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.8.0/holder.js"></script>
-    <script src="../bower_components/bootstrap/dist/css/bootstrap.min.css"></script>
-    <script src="../bower_components/jquery/jquery.js"></script>
-    <script src="core.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/core.js"></script>
 
 </head>
 
@@ -36,8 +36,7 @@
 
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="../navbar-static-top/">Sign-Up</a></li>
-                    <li><a href="../navbar-fixed-top/">Current Schedule</a></li>
-                </ul>
+                    <i><a href="../navbar-fixed-top/">Current Schedule</a></i</ul>
             </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
     </nav>
@@ -55,22 +54,23 @@
         </div>
         <div class="col-md-3 text-center">
             <h3>Monday</h3>
-            <img class="thumbnail center-block" src="holder.js/200x200">
+            <button class="btn btn-primary btn-lg main-button"><h1><span class="label label-primary main-label">5</span></h1></button>
         </div>
         <div class="col-md-3 text-center">
             <h3>Wednesday</h3>
-            <img class="thumbnail center-block" src="holder.js/200x200">
+            <button class="btn btn-success btn-lg main-button"><h1><span class="label label-success main-label">2</span></h1></button>
         </div>
         <div class="col-md-3 text-center">
             <h3>Friday</h3>
-            <img class="thumbnail center-block" src="holder.js/200x200">
+            <button class="btn btn-danger btn-lg main-button"><h1><span class="label label-danger main-label">10</span></h1></button>
         </div>
         <div class="col-md-3 text-center">
             <h3>Sunday</h3>
-            <img class="thumbnail center-block" src="holder.js/200x200">
+            <button class="btn btn-warning btn-lg main-button"><h1><span class="label label-warning main-label">3</span></h1></button>
         </div>
-        <p class="text-center">Click one of the four buttons below to sign-up for that day. The number on top represents the number of volunteers who have already pledged to donate  that day.</p>
-
+        <div>
+            <p class="text-center">Click one of the four buttons below to sign-up for that day. The number on top represents the number of volunteers who have already pledged to donate  that day.</p>
+        </div>
     </div>
 
     <hr/>
@@ -235,7 +235,12 @@
             <p>Made with love | Github</p>
         </div>
     </div>
+
 </div>
 
+<script src="js/jquery.backstretch.js"></script>
+<script>
+    // $.backstretch("http://dl.dropbox.com/u/515046/www/garfield-interior.jpg");
+</script>
 </body>
 </html>
